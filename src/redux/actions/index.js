@@ -22,3 +22,17 @@ export const logout = () => {
         type: 'SIGNOUT'
     }
 }
+
+export const add = (elemento) => {
+    return {
+        type: 'ADICIONAR',
+        payload: elemento
+    }
+}
+
+export const remove = (elemento) => {
+    return {
+        type: 'REMOVER',
+        payload: elemento
+    }
+}
